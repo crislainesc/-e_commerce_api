@@ -1,20 +1,21 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.0.2"
+ruby '3.0.2'
 
-gem "rails", "~> 7.0.5"
+gem 'rails', '~> 7.0.5'
 
 # Basic
-gem "pg", "~> 1.1"
-gem "puma", "~> 5.0"
-gem "bootsnap", require: false
+gem 'bootsnap', require: false
+gem 'pg', '~> 1.1'
+gem 'puma', '~> 5.0'
 
 # Auth
 gem 'devise_token_auth'
 
 group :development, :test do
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -23,6 +24,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-
+# Foundation
+gem 'autoprefixer-rails'
+gem 'foundation_emails'
