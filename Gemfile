@@ -29,3 +29,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Foundation
 gem 'autoprefixer-rails'
 gem 'foundation_emails'
+
+# CORS
+gem 'rack-cors', '~> 1.1.1'
