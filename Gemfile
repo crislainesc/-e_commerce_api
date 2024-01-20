@@ -37,3 +37,6 @@ gem 'foundation_emails'
 
 # CORS
 gem 'rack-cors', '~> 1.1.1'
+
+# Rendering
+gem 'jbuilder', '~> 2.10.1'
